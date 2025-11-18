@@ -1,77 +1,27 @@
 <!doctype html>
-<html lang="""en
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio — Jon GameDeveloper</title>
     <meta name="description" content="Front page portfolio of Jane Developer — designer & developer. Projects, skills, and contact." />
-    <style>
-        :root{
-            --bg:#0f1724; --card:#0b1220; --muted:#9aa6b2; --accent:#4fd1c5; --glass: rgba(255,255,255,0.03);
-            --radius:12px; --max-width:1100px; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-        }
-        *{box-sizing:border-box}
-        html,body{height:100%}
-        body{
-            margin:0; background:linear-gradient(180deg,#071023 0%,var(--bg) 100%); color:#e6eef6; -webkit-font-smoothing:antialiased;
-            line-height:1.45; display:flex; justify-content:center; padding:32px;
-        }
-        .container{width:100%;max-width:var(--max-width)}
-        header{
-            display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:28px;
-        }
-        .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
-        .logo{
-            width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6b8cff);display:grid;place-items:center;font-weight:700;
-            color:#022; font-size:18px;
-        }
-        nav{display:flex;gap:12px;align-items:center}
-        .nav-links{display:flex;gap:14px}
-        a.button{
-            background:var(--glass); color:var(--muted); padding:8px 12px; border-radius:10px; text-decoration:none; font-size:14px;
-            transition:all .18s;
-        }
-        a.button.primary{background:linear-gradient(90deg,var(--accent),#6b8cff); color:#032027; font-weight:600}
-        a.button:hover{transform:translateY(-2px)}
-        /* Layout */
-        main{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
-        @media (max-width:900px){ main{grid-template-columns:1fr} header{flex-direction:column;align-items:flex-start} .nav-links{display:none} .mobile-only{display:inline-block} }
-        .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:28px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(2,6,23,0.6)}
-        .hero h1{margin:0 0 8px;font-size:28px;letter-spacing:-0.02em}
-        .hero p{margin:0;color:var(--muted)}
-        .meta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
-        .card{background:var(--card);padding:18px;border-radius:12px}
-        .projects{display:grid;gap:12px;margin-top:18px}
-        .project{display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
-        .project img{width:72px;height:54px;border-radius:8px;object-fit:cover;background:#071125}
-        .skills{display:flex;flex-wrap:wrap;gap:8px}
-        .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
-        aside .card{position:sticky;top:32px}
-        footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;align-items:center}
-        .socials{display:flex;gap:10px}
-        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-        /* simple form */
-        form{display:grid;gap:8px}
-        input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
-        input::placeholder,textarea::placeholder{color:var(--muted)}
-        button[type="submit"]{border:0;padding:10px 14px;border-radius:8px;background:var(--accent);color:#022;font-weight:600;cursor:pointer}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container" role="main">
         <header>
-            <a class="brand" href="#">
+            <a class="brand" href="index.html">
                 <span class="logo" aria-hidden="true">JD</span>
-                <div>
-                    <div style="font-weight:700">Jon GameDeveloper</div>
-                    <div style="font-size:13px;color:var(--muted)">Designer & Front‑End Engineer</div>
+                <div class="brand-info">
+                    <div class="brand-name">Jon GameDeveloper</div>
+                    <div class="brand-sub">Designer & Front‑End Engineer</div>
                 </div>
             </a>
 
             <nav aria-label="Main navigation">
                 <div class="nav-links" role="list">
                     <a class="button" href="#projects">Projects</a>
-                    <a class="button" href="#about">About</a>
+                    <a class="button" href="about.html">About</a>
                     <a class="button" href="#contact">Contact</a>
                 </div>
                 <a class="button primary" href="#contact">Hire me</a>
@@ -85,39 +35,39 @@
 
                 <div class="meta">
                     <a class="button primary" href="#projects">See projects</a>
-                    <a class="button" href="#about">About me</a>
-                    <span style="align-self:center;color:var(--muted);font-size:13px">Based in Amsterdam · Open to remote work</span>
+                    <a class="button" href="about.html">About me</a>
+                    <span class="meta-note">Based in Amsterdam · Open to remote work</span>
                 </div>
 
                 <div class="projects" id="projects" aria-label="Featured projects">
-                    <h3 style="margin:14px 0 6px">Featured projects</h3>
+                    <h3 class="section-heading">Featured projects</h3>
 
                     <article class="project" aria-labelledby="p1">
                         <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect width='100%' height='100%' fill='%2308112a'/><text x='50%' y='50%' fill='%2388e6d8' font-family='sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'>Project A</text></svg>" alt="">
                         <div>
-                            <div id="p1" style="font-weight:700">Interactive Dashboard</div>
-                            <div style="color:var(--muted);font-size:13px">A performant data dashboard with realtime updates and accessible visualizations.</div>
+                            <div id="p1" class="project-title">Interactive Dashboard</div>
+                            <div class="muted small">A performant data dashboard with realtime updates and accessible visualizations.</div>
                         </div>
                     </article>
 
                     <article class="project" aria-labelledby="p2">
                         <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect width='100%' height='100%' fill='%2311273a'/><text x='50%' y='50%' fill='%236b8cff' font-family='sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'>Project B</text></svg>" alt="">
                         <div>
-                            <div id="p2" style="font-weight:700">Design System</div>
-                            <div style="color:var(--muted);font-size:13px">Component library and token system used across multiple products.</div>
+                            <div id="p2" class="project-title">Design System</div>
+                            <div class="muted small">Component library and token system used across multiple products.</div>
                         </div>
                     </article>
                 </div>
 
-                <section id="about" style="margin-top:18px">
-                    <h3 style="margin:0 0 8px">About</h3>
-                    <p style="color:var(--muted);margin:0 0 12px">Focused on shipping maintainable UI; fluent with HTML, CSS, JavaScript, React, and testing. I mentor teams on accessibility and performance practices.</p>
+                <section id="about" class="about-section">
+                    <h3 class="section-heading small">About</h3>
+                    <p class="muted about-desc">Focused on shipping maintainable UI; fluent with HTML, CSS, JavaScript, React, and testing. I mentor teams on accessibility and performance practices.</p>
 
-                    <div class="card" style="display:flex;gap:12px;align-items:center">
-                        <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#4fd1c5,#6b8cff);display:grid;place-items:center;font-weight:700;color:#022">J</div>
+                    <div class="card profile-card">
+                        <div class="avatar">J</div>
                         <div>
-                            <div style="font-weight:700">Available for freelance & contract work</div>
-                            <div style="color:var(--muted);font-size:13px">Typical engagements: 4–12 weeks</div>
+                            <div class="profile-title">Available for freelance & contract work</div>
+                            <div class="muted small">Typical engagements: 4–12 weeks</div>
                         </div>
                     </div>
                 </section>
@@ -125,7 +75,7 @@
 
             <aside>
                 <div class="card" aria-labelledby="skills">
-                    <h3 id="skills" style="margin:0 0 10px">Skills</h3>
+                    <h3 id="skills" class="section-heading">Skills</h3>
                     <div class="skills" aria-hidden="false">
                         <span class="skill">HTML</span>
                         <span class="skill">CSS</span>
@@ -137,7 +87,7 @@
                         <span class="skill">Design Systems</span>
                     </div>
 
-                    <h4 style="margin:16px 0 8px">Contact</h4>
+                    <h4 class="subheading">Contact</h4>
                     <form id="contact" action="mailto:hello@example.com" method="post" enctype="text/plain">
                         <label class="sr-only" for="name">Name</label>
                         <input id="name" name="name" placeholder="Your name" required>
@@ -149,15 +99,15 @@
                     </form>
                 </div>
 
-                <div style="height:18px"></div>
+                <div class="spacer-18" aria-hidden="true"></div>
 
                 <div class="card" aria-label="Quick links">
-                    <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div class="quick-links-row">
                         <div>
-                            <div style="font-weight:700">Resume</div>
-                            <div style="color:var(--muted);font-size:13px">PDF available on request</div>
+                            <div class="quick-title">Resume</div>
+                            <div class="muted small">PDF available on request</div>
                         </div>
-                        <div style="display:flex;flex-direction:column;gap:8px">
+                        <div class="quick-buttons">
                             <a class="button" href="#" aria-label="GitHub">GitHub</a>
                             <a class="button" href="#" aria-label="LinkedIn">LinkedIn</a>
                         </div>
@@ -177,7 +127,6 @@
     </div>
 
     <script>
-        // small behaviors: set year, smooth scroll for internal links
         document.getElementById('year').textContent = new Date().getFullYear();
         document.querySelectorAll('a[href^="#"]').forEach(a=>{
             a.addEventListener('click', e=>{
@@ -191,4 +140,4 @@
         });
     </script>
 </body>
-</html>"></html>
+</html>
