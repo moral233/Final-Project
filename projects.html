@@ -6,30 +6,6 @@
   <title>Projects — Jon Morales</title>
   <meta name="description" content="Projects by Jon Morales — Game Developer." />
   <link rel="stylesheet" href="style.css">
-  <style>
-        :root{
-            --bg:#0f1724;
-            --card:#0b1220;
-            --accent:#1e90ff;
-            --text:#e6eef8;
-        }
-        html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:Inter, system-ui, Arial, sans-serif}
-        .wrap{max-width:1100px;margin:48px auto;padding:24px;}
-        header{display:flex;align-items:center;gap:16px}
-        h1{margin:0;font-size:clamp(1.4rem,2.5vw,2rem)}
-        p.lead{margin:8px 0 20px;color:#bcd3f7}
-        .btn{
-            display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:600;
-            box-shadow:0 6px 18px rgba(30,144,255,0.16);
-        }
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
-        .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:14px;border-radius:12px}
-        .card h3{margin:0 0 8px;font-size:1.05rem}
-        .iframe-wrap{width:100%;height:360px;background:#000;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
-        .iframe-wrap iframe{width:100%;height:100%;border:0}
-        .meta{margin-top:10px;color:#9fb9ea;font-size:0.92rem}
-        @media (max-width:420px){.iframe-wrap{height:220px}}
-    </style>
 </head>
 <body>
   <div class="container" role="main">
@@ -46,9 +22,9 @@
         <div class="nav-links" role="list">
           <a class="button" href="index.html">Home</a>
           <a class="button" href="about.html">About</a>
-          <a class="button" href="index.html#contact">Contact</a>
+          <a class="button" href="contact.html">Contact</a>
         </div>
-        <a class="button primary" href="index.html#contact">Hire me</a>
+        <a class="button primary" href="contact.html">Hire me</a>
       </nav>
     </header>
 
@@ -59,56 +35,22 @@
 
         <div class="projects" aria-label="Projects list">
           <article class="project" aria-labelledby="proj1">
-            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect width='100%' height='100%' fill='%2308112a'/><text x='50%' y='50%' fill='%2388e6d8' font-family='sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'>Project A</text></svg>" alt="">
+            <img src="finalunityproject.png" alt="Final Unity Project">
             <div>
-              <div id="proj1" class="project-title">Interactive Dashboard</div>
-              <div class="muted small">Realtime visuals, performant bindings, accessible controls.</div>
+              <div id="proj1" class="project-title">Final Unity Project</div>
+              <div class="muted small">An interactive game experience built with Unity and real-time visuals.</div>
             </div>
           </article>
 
           <article class="project" aria-labelledby="proj2">
-            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect width='100%' height='100%' fill='%2311273a'/><text x='50%' y='50%' fill='%236b8cff' font-family='sans-serif' font-size='24' text-anchor='middle' dominant-baseline='middle'>Project B</text></svg>" alt="">
+            <img src="Unreal.png" alt="Unreal Engine Project">
             <div>
-              <div id="proj2" class="project-title">Design System & Toolkit</div>
-              <div class="muted small">Components, tokens, and build tooling used across interactive projects.</div>
+              <div id="proj2" class="project-title">Unreal Engine Game</div>
+              <div class="muted small">High-performance game built with Unreal Engine and polished gameplay mechanics.</div>
             </div>
           </article>
-
-          <!-- add more projects as needed -->
         </div>
       </section>
-
-      <section id="projects" aria-labelledby="projects-heading">
-            <header>
-                <h1 id="projects-heading">Projects — Games & Prototypes</h1>
-            </header>
-
-            <p class="lead">
-                A selection of games and prototypes. Visit my itch.io page to see all releases, builds, and downloads.
-            </p>
-
-            <p>
-                <a class="btn" href="https://jon-morales.itch.io/" target="_blank" rel="noopener">View my games on itch.io</a>
-            </p>
-
-            <div class="grid" role="list">
-                <article class="card" role="listitem" aria-label="itch.io profile snapshot">
-                    <h3>itch.io profile</h3>
-                    <div class="iframe-wrap" title="Jon Morales itch.io">
-                        <iframe src="https://jon-morales.itch.io/" loading="lazy" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
-                    </div>
-                    <p class="meta">Open the full profile to browse individual game pages, downloads, and build notes.</p>
-                </article>
-
-                <article class="card" role="listitem" aria-label="Open itch.io in new tab">
-                    <h3>Open itch.io</h3>
-                    <p class="meta">Quick link to the profile with all published games and prototypes.</p>
-                    <p style="margin-top:12px">
-                        <a class="btn" href="https://jon-morales.itch.io/" target="_blank" rel="noopener">Open itch.io</a>
-                    </p>
-                </article>
-            </div>
-        </section>
     </main>
 
     <footer>

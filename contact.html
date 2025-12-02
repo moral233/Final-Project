@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Jon Morales</title>
+  <meta name="description" content="Contact Jon Morales — Game Developer. Phone, email and hire-me CTA." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true">JM</span>
+        <div class="brand-info">
+          <div class="brand-name">Jon Morales</div>
+          <div class="brand-sub">Game Developer & Front‑End Engineer</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <div class="nav-links" role="list">
+          <a class="button" href="index.html">Home</a>
+          <a class="button" href="projects.html">Projects</a>
+          <a class="button" href="about.html">About</a>
+        </div>
+        <a class="button primary" href="mailto:moral233@msu.edu">Hire me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero card" aria-labelledby="contact-intro">
+        <h1 id="contact-intro">Get in touch</h1>
+        <p class="muted about-desc">I'm available for freelance, contract and collaboration. Quick contacts below or use the form to send a message.</p>
+
+        <div class="card contact-info">
+          <h3 class="section-heading">Direct</h3>
+          <p><strong>Phone:</strong> <a href="tel:+16165899736">(616) 589-9736</a></p>
+          <p><strong>Email:</strong> <a href="mailto:moral233@msu.edu">moral233@msu.edu</a></p>
+          <div class="meta">
+            <a class="button primary" href="mailto:moral233@msu.edu">Email to hire</a>
+            <a class="button" href="tel:+16165899736">Call</a>
+          </div>
+        </div>
+
+        <div class="card contact-form">
+          <h3 class="section-heading">Message me</h3>
+          <form id="contact-form" action="mailto:moral233@msu.edu" method="post" enctype="text/plain">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required>
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your@domain.com" required>
+            <label class="sr-only" for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Project summary or message" required></textarea>
+            <div class="form-actions">
+              <button type="submit">Send message</button>
+              <a class="button" href="mailto:moral233@msu.edu">Email directly</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Jon Morales</div>
+      <div class="socials" aria-label="Social links">
+        <a class="button" href="#" aria-label="Twitter">Twitter</a>
+        <a class="button" href="#" aria-label="Dribbble">Dribbble</a>
+        <a class="button" href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
